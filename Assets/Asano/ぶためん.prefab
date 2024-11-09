@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 7
   prefNextDagashi: {fileID: 1572960853117911284, guid: dd2d0a180041b54468b9a78928ae8f7a, type: 3}
+  isHold: 1
 --- !u!50 &352693712509300096
 Rigidbody2D:
   serializedVersion: 5

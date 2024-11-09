@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 5
   prefNextDagashi: {fileID: 1572960853117911284, guid: b180b74fe797d69488278777d07a6f77, type: 3}
+  isHold: 1
 --- !u!50 &352693712509300096
 Rigidbody2D:
   serializedVersion: 5
