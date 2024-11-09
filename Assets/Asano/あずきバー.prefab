@@ -10,16 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4794903321596172901}
   - component: {fileID: 1678534067330550826}
-  - component: {fileID: 7972278321642284192}
+  - component: {fileID: 5000590215043950012}
   - component: {fileID: 352693712509300096}
-  - component: {fileID: 690924812410850663}
-  - component: {fileID: 6227991878732343481}
-  - component: {fileID: 8625005434032864410}
-  - component: {fileID: 2139566614679124399}
-  - component: {fileID: 8001475878280049149}
-  - component: {fileID: 8989181895566657015}
+  - component: {fileID: 3495927885770700878}
+  - component: {fileID: 8346623748519833661}
+  - component: {fileID: 2627430687462928962}
   m_Layer: 0
-  m_Name: "\u3053\u3093\u307A\u3044\u3068\u3046"
+  m_Name: "\u3042\u305A\u304D\u30D0\u30FC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1601928594513099675, guid: 204971c1419dcc141bcb1cd07425a738, type: 3}
+  m_Sprite: {fileID: 4952420217161772377, guid: 3b9fc4cbc0220f6499851e0173a4c2cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +92,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7972278321642284192
+--- !u!114 &5000590215043950012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe1eabc8d9646241b5560ae38002651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  prefNextDagashi: {fileID: 1572960853117911284, guid: f60fc358158656141a0b0c78e1dbba75, type: 3}
+  score: 8
+  prefNextDagashi: {fileID: 1572960853117911284, guid: 37b8fa13b262331448e6623234a0adb2, type: 3}
 --- !u!50 &352693712509300096
 Rigidbody2D:
   serializedVersion: 5
@@ -136,8 +133,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &690924812410850663
-CircleCollider2D:
+--- !u!70 &3495927885770700878
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -170,10 +167,11 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.55266446, y: -0.3816015}
-  m_Radius: 0.37206677
---- !u!58 &6227991878732343481
-CircleCollider2D:
+  m_Offset: {x: 0, y: 0.6464419}
+  m_Size: {x: 1.51969, y: 3.3571217}
+  m_Direction: 0
+--- !u!61 &8346623748519833661
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -206,10 +204,20 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.2039598, y: -0.42107767}
-  m_Radius: 0.5233918
---- !u!58 &8625005434032864410
-CircleCollider2D:
+  m_Offset: {x: 0, y: -0.40123886}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.62, y: 4.65}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.5419812, y: 1.2840511}
+  m_EdgeRadius: 0
+--- !u!70 &2627430687462928962
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -242,113 +250,6 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.3816014, y: -0.3816015}
-  m_Radius: 0.31943193
---- !u!58 &2139566614679124399
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572960853117911284}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.26317343, y: 0.17764218}
-  m_Radius: 0.6418195
---- !u!58 &8001475878280049149
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572960853117911284}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.5066084, y: 0.09869009}
-  m_Radius: 0.45101908
---- !u!58 &8989181895566657015
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572960853117911284}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.17106257, y: 0.59214044}
-  m_Radius: 0.3457491
+  m_Offset: {x: 0.01671847, y: -1.6264583}
+  m_Size: {x: 0.36055562, y: 1.3970902}
+  m_Direction: 0

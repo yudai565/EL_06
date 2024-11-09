@@ -102,7 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe1eabc8d9646241b5560ae38002651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefNextDagashi: {fileID: 0}
+  score: 6
+  prefNextDagashi: {fileID: 1572960853117911284, guid: e436b27bcc1e9d649957b5af96a1161a, type: 3}
 --- !u!50 &352693712509300096
 Rigidbody2D:
   serializedVersion: 5
