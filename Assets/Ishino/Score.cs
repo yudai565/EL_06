@@ -33,7 +33,7 @@ public class Score : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
         CheckInstance();
     }
 
@@ -58,4 +58,9 @@ public class Score : MonoBehaviour
     {
         return HighScore;
     }
+
+	private void OnDestroy()
+	{
+        instance = null;
+	}
 }
